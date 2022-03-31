@@ -6,18 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
-    <script src="initScript.js"></script>
+    <script src="initScript.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="logo">
+      <a class="logo" href="index.html">
         <img src="Icons/newLogo.jpg" alt="logo" />
-        <h1>Social network</h1>
-      </div>
+        <p>Social network</p>
+      </a>
       <input type="text" placeholder="Поиск" />
       <button class="btnProfile">
         <img src="Icons/userIcon.png" alt="" class="userIcon" />
       </button>
     </header>
+    <div class="container">
+      <div class="left-menu">
+        <ul></ul>
+      </div>
+      <div class="content">
+        <div class="post">
+          <div class="post-sender">
+            <img src="Icons/userIcon.png" alt="parket" />
+            <h4>Какая-то группа</h4>
+          </div>
+          <div class="post-content">
+            <p>
+              Какой-то странный текст, который я написал для проверки и
+              настройки стилей, не обессудь
+            </p>
+            <div>
+              <img src="Icons/parket.jpg" alt="" />
+            </div>
+          </div>
+          <div class="content-footer">
+            <button class="like">
+              <img src="Icons/like.png" alt="like" />
+              <p>444</p>
+            </button>
+            <button class="repost">
+              <img src="Icons/repost.png" alt="repost" />
+              <p>24</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
